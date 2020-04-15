@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,37 +12,48 @@
 
 <body>
     <div id="page-container">
-        
+
         <div id="calc-container">
-            
-            <div class="result-row" id="total"><p>0</p></div>
-            
-            <div class="row">
-                <div class="box"><p>7</p></div>
-                <div class="box"><p>8</p></div>
-                <div class="box"><p>9</p></div>
-                <div class="box orange"><p>&divide</p></div>
-            </div>
-            
-            <div class="row">
-                <div class="box"><p>4</p></div>
-                <div class="box"><p>5</p></div>
-                <div class="box"><p>6</p></div>
-                <div class="box orange"><p></p>&times</p></div>
-            </div>
-            
-            <div class="row">
-                <div class="box"><p>1</p></div>
-                <div class="box"><p>2</p></div>
-                <div class="box"><p>3</p></div>
-                <div class="box orange"><p>&#43</p></div>
-            </div>
-            
-            <div class="row">
-                <div class="box-bottom"><p>0</p></div>
-                <div class="box-bottom orange"><p>&#61</p></div>
+
+            <div id="display">
+                <p id="display-p">0</p>
             </div>
 
+            <div id="calc-button-container">
+
+                <div class="row">
+                    <div id="7" class="button box">7</div>
+                    <div id="4" class="button box">4</div>
+                    <div id="1" class="button box">1</div>
+                    <div id="." class="button box">.</div>
+                </div>
+
+                <div class="row">
+                    <div id="8" class="button box">8</div>
+                    <div id="5" class="button box">5</div>
+                    <div id="2" class="button box">2</div>
+                    <div id="0" class="button box">0</div>
+
+
+                </div>
+
+                <div class="row">
+                    <div id="9" class="button box">9</div>
+                    <div id="6" class="button box">6</div>
+                    <div id="3" class="button box">3</div>
+                    <div id="clear" class="box">DEL</div>
+
+                </div>
+
+                <div class="operand-row">
+                    <div id="divide" class="operand operate">&divide</div>
+                    <div id="multiply" class="operand operate">&times</div>
+                    <div id="subtract" class="operand operate">&#8722</div>
+                    <div id="add" class="operand operate">&#43</div>
+                    <div id="equals" class="operand">&#61</div>
+                </div>
+
+            </div>
         </div>
     </div>
     <script type="text/javascript" src="script.js"></script>

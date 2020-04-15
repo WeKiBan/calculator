@@ -1,5 +1,5 @@
 #page-container{
-    background-color: aqua;
+    background-color: rgba(52, 146, 209, 0.76);
     width:100%;
     height:100vh;
     display: flex;
@@ -13,65 +13,108 @@
     justify-content: space-between;
     border:solid 2px rgb(70, 70, 70);
     background-color: rgb(70, 70, 70);
-    height:55vh;
-    width:40vh;
+    height:56vh;
+    min-height:300px;
+    min-width: 200px;;
+    width:42vh;
     color: #eeeeee;
     border-radius:10px;
     overflow: hidden;
-    font-size:30px;
+    font-size:4vh;
     font-family: 'Open Sans', sans-serif;
 }
 
-.row{
-    display:flex;
-    width:100%;
-    justify-content: space-evenly;
-    height:20%;
-    align-items: center;
-    
-}
-.result-row{
-    width:100%;
-    display:flex;
-    flex-direction: column;
+#display{
+    display: flex;
+    width: 95%;
     height:25%;
-    align-items: flex-end;
-    justify-content: center;
-    font-size: 80px;   
+    justify-content: flex-end;
+    align-items:center;
+    margin:auto;
+    font-size:8vh;
+    background-color: rgba(102, 102, 102, 0.829);
+    border:5px solid rgb(70, 70, 70);
+    border-radius: 10px;;
 }
-.result-row p{
-    margin-right: 17px;
+#display p{
+    padding-right: 10px;
+}
+
+#calc-button-container{
+ display: flex;
+ width:100%;
+ height:80%;
+ justify-content: space-evenly;
+ align-items: center;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    width:23%;
+    justify-content: space-evenly;
+}
+
+.operand-row{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    width:23%;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .box{
     background-color: grey;
-    height:100%;
-    width:25%;
-    text-align: center;
-    display:flex;
-    flex-direction: column;
+    height:23%;
+    display:flex;;
+    width:100%;
+    align-items: center;
     justify-content: center;
-    border:solid 2px rgb(70, 70, 70);
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .box:hover{
-    opacity:70%;
-    
+    background-color: rgb(99, 99, 99);
 }
 
-.box-bottom{
-    background-color: grey;
-    height:100%;
-    width:50%;
-    text-align: center;
+.box:active{
+    background-color: rgb(99, 99, 99);
+}
+
+.operand{
+    background-color:orange;
+    height:18%;
     display:flex;
-    flex-direction: column;
+    width:100%;
+    align-items: center;
     justify-content: center;
-    border:solid 2px rgb(70, 70, 70);
+    border-radius: 5px;
+    cursor: pointer;
+
 }
 
-.orange{
-    background-color: orange;;
+#clear{
+    background-color:rgba(255, 37, 37, 0.726);
 }
+
+#clear:hover{
+    background-color:rgba(255, 37, 37, 0.452); 
+}
+
+.operand:hover{
+    background-color:rgba(255, 166, 0, 0.788);
+
+
+
+
+
+
+
+
+
 
 
